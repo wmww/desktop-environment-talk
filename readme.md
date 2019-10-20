@@ -1,1 +1,3 @@
-WIP repo for a talk I'm giving on desktop environments
+# Understanding Desktop Environments
+
+See [talk.md](talk.md) for my full speaker notes
