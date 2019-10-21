@@ -15,7 +15,7 @@
 ## About me
 - William Wold
 - Often found in Fredericksburg VA
-- Works for Canonical (company behind Ubuntu)
+- Works for Canonical, the company behind Ubuntu
   - Works on Mir, an up-and-coming Wayland compositor library
 - Get in touch:
   - Email: wm@wmww.sh
@@ -27,14 +27,14 @@
 - The visual components that make up the core desktop experience
 - Not a single piece of software, rather a collection of programs that work well together
 - Generally includes:
-  - Lock screen
-  - Desktop background (including icons)
-  - Panels (contains clock, open windows, Wifi menu, etc)
-  - Notifications
-  - App launcher
-  - Settings manager
   - Core applications (file manager, system monitor, etc)
+  - Settings manager
+  - Panels (contains clock, open windows, Wifi menu, etc)
+  - App launcher/Menu
+  - Notifications
+  - Desktop background (including icons)
   - Window manager (more on that below)
+  - Lock screen
 - A DE does __not__ include:
   - Command line programs (ls, vim)
   - More specialized apps (Firefox, Blender)
@@ -66,7 +66,6 @@
 - Example in a VM of installing an additional DE and using it
 - Example customizing it with different components
 - __TODO: link scripts, screenshots, etc here__
-
 - `sudo apt install mate-desktop-environment mate-desktop-environment-extra`
 - Log in, customize panel a bit
 - Change background
@@ -85,8 +84,8 @@
 *Call for questions*
 
 ## Display Manager
-- What you see when you initially boot up or log out
-- Allows you to switch users
+- What you see after booting up or logging out
+- Allows you to select a user to log in as
 - Allows you to select which installed DE to run
 - Can be turned off, in which case you'll boot directly to a TTY terminal
 - There are several, and their names usually end with DM (GDM, LXDM, etc)
@@ -133,13 +132,13 @@
 - A more modern, efficient and secure protocol
 - In Wayland, the window manager is built into the display server
 - Wayland does not have a standard display server like Xorg is for X11
-- Instead, desktops environments are expected to provide their own server to meet their unique needs
+- Instead, desktop environments are expected to provide a server to meet their unique needs
 - The core Wayland protocol is very basic, but servers can support extensions
 
 ## Wayland Compositor
 - Display servers that speak Wayland are known as __Wayland compositors__
 - GNOME and KDE have turned their window managers into Wayland compositors
-- Projects that don't want to maintain an entire display server can use libraries such as wlroots and __Mir__ (<​- that's the one I work on)
+- Projects that don't want to maintain an entire display server can use libraries such as wlroots and __Mir__ (← that's the thing I work on)
 
 ## Apps and Toolkits
 - Apps that work on X11 must be adapted to also work on Wayland
