@@ -59,30 +59,6 @@
   - You can also switch out a DEs window manger
   - These sort of setups are more customizable, but generally less polished
 
-*Call for questions*
-
-## Example
-- Disclaimer about this shit being dangerous to the system
-- Example in a VM of installing an additional DE and using it
-- Example customizing it with different components
-- __TODO: link scripts, screenshots, etc here__
-- `sudo apt install mate-desktop-environment mate-desktop-environment-extra`
-- Log in, customize panel a bit
-- Change background
-- `sudo apt install i3`
-- Change $mod to Mod1+Mod4
-- DDG: "mate replace window manager"
-- [How to Replace Mate’s Default Window Manager with Openbox](https://www.maketecheasier.com/replace-mate-window-manager-with-openbox/)
-- dconf editor: /org/mate/desktop/session/required-components/windowmanager set to i3
-- Log in and switch giant dekstop to other workspace with Mod+Shift+2
-- Turn off desktop icons in tweak to prevent that
-- Remove i3 bar
-- Log out and in again
-- `sudo apt install materia-gtk-theme`
-- Use Materia in Appearence settings
-
-*Call for questions*
-
 ## Display Manager
 - What you see after booting up or logging out
 - Allows you to select a user to log in as
@@ -99,8 +75,6 @@
 - If you switch away and want to get it back, try all of them until you find it (it's often on 1, 2 or 7)
 - If there is no display manager enabled, Linux will boot directly to TTY 1
 - You can run a DE from a TTY without a display manager, though it may take some configuration
-
-*Call for questions and example?*
 
 ## Display Server
 - The Linux kernel allows a program to draw to the display, but only one program at a time
